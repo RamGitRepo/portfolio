@@ -205,48 +205,48 @@
           <div class="resume-item">
             <h4>AI & Data Consultant</h4>
             <h5>Jan'22 - Present</h5>
-            <p><em>Freelancing Clients (Europe, APAC region)</em></p>
-            <h5><b>Major Projects</b></h5>
-            <h4><b>Object Detection + Visual SLAM - Robotics</b></h4>
+            <p><em>Freelancing Clients (Europe & US)</em></p>
+            <h4><b>AI Career Assistant LLM Agent with Semantic Kernel, RAG, and Plugin Architecture</b></h4>
             <ul>
-              <li>Developed a custom training pipeline for YOLOv8 instance segmentation to achieve high accuracy in
-                real-time object detection tasks</li>
-              <li>Implemented a robust data preprocessing pipeline to prepare input data for YOLOv8 instance
-                segmentation, including image augmentation and normalization techniques</li>
-              <li>Performed extensive testing and validation of YOLOv8 instance segmentation model across various
-                environmental conditions and lighting scenarios</li>
-              <li>Optimized YOLOv8 model hyperparameters and architecture for efficient inference on embedded systems
+              <li>Designed and implemented a multi-step agent using Microsoft Semantic Kernel that orchestrates multiple AI plugins to extract, refine, and enrich user queries using Azure OpenAI (GPT-35-Turbo).</li>
+              <li>Integrated a CV Skill Extraction Plugin that uses a RAG-powered Azure Function to parse user resumes and extract technical and domain-specific skills</li>
+              <li>Developed a QueryRefinerPlugin using LLMs to clean, rephrase, and restructure user queries, improving downstream plugin accuracy and LLM understanding.</li>
+              <li>Integrated external web search capabilities via the Tavily API to fetch real-time learning resources related to user skill gaps.
               </li>
               <li>Designed and implemented an adaptive thresholding mechanism in YOLOv8 to dynamically adjust detection
                 thresholds based on scene complexity and noise levels</li>
               <!--<li>Integrated object tracking algorithm to maintain consistent object identities across consecutive frames in real-time</li>-->
-              <li>Integrated YOLOv8(nano) model with ORB-SLAM to leverage object detection information for dynamic
-                object masking and localization refinement</li>
-              <li>Implemented a real-time visualization module to overlay YOLOv8 object detection results onto
-                ORB-SLAM's visual map for comprehensive scene understanding</li>
+              <li>Implemented Redis caching mechanism at the agent level to avoid repeated calls for the same questions, reducing token usage and API latency.</li>
+              <li>Instrumented OpenTelemetry-based observability to trace token usage, model latency, and Azure OpenAI cost metrics across plugin calls and agent executions.</li>
+              <li>Orchestrated plugin-based flow that chains refine → retrieve → search operations, returning structured responses like:</li>
+              <li>Developed a FastAPI endpoint (/api/agtchat) to serve frontend interfaces like Streamlit, enabling real-time interaction with the assistant.</li>
             </ul>
 
             <div class="skills-section px-3 px-lg-4">
               <h2 class="h3 mb-1">Technical Skills</h2>
               <div class="flex-container">
-                <div class="flex-box">Object Detection</div>
-                <div class="flex-box">Instance Segmentation</div>
-                <div class="flex-box">Data Annotation</div>
-                <div class="flex-box">Visual SLAM</div>
-                <div class="flex-box">Multi-Instance GPU (MIG) Training</div>
+                <div class="flex-box">Text Extraction</div>
+                <div class="flex-box">Data Ingestion</div>
+                <div class="flex-box">Retrieval Augmented Generation</div>
+                <div class="flex-box">Data Augmented</div>
+                <div class="flex-box">Semantic Aware chunking</div>
+                <div class="flex-box">Cache Mechanism</div>
+                <div class="flex-box">Observability</div>
               </div>
             </div>
 
             <div class="skills-section px-3 px-lg-4">
               <h2 class="h3 mb-1">Tools and Technologies</h2>
               <div class="flex-container">
-                <div class="flex-box">YOLOv7/8</div>
-                <div class="flex-box">Detectron 2</div>
-                <div class="flex-box">Segment Anything Model (SAM)</div>
-                <div class="flex-box">CVAT</div>
-                <div class="flex-box">ORB-SLAM</div>
-                <div class="flex-box">Genesis Cloud</div>
-
+                <div class="flex-box">Semantic Kernel</div>
+                <div class="flex-box">Python</div>
+                <div class="flex-box">Function App</div>
+                <div class="flex-box">Event Trigger</div>
+                <div class="flex-box">FastAPI</div>
+                <div class="flex-box">AI services</div>
+                <div class="flex-box">Azure OpenAI</div>
+                <div class="flex-box">Azure Cloud</div>
+                <div class="flex-box">Redis</div>
               </div>
             </div>
           </div>
@@ -271,57 +271,36 @@
             <h5>Feb'22 - Mar2025</h5>
             <p><em>Elastacloud Limited, UK</em></p>
             <ul>
-              <li>Supervised and architected the development of the AI pipeline, aligning with the principles of Cloud
-                and Data architecture</li>
-              <li>Collaborated with clients and stakeholders to deliver customized AI solutions, and drive successful
-                sales initiatives for new AI projects.</li>
-              <li>Led a team of computer vision engineers, data scientists, and full-stack software engineers to
-                incorporate industry best practices in project management. </li>
-              <li>Mentor junior AI Engineers with technical guidance to ensure their work aligns with company policies
-                and support their professional
-                development</li>
-              <li>Developed an LLM application for Full Stack Developers, expediting their development process and
-                resulting in a 50% reduction in the Agile SDLC timeline</li>
+              <li>Intelligent Document Understanding & Conversational AI Platform</li>
+              <li>Built an intelligent document pipeline using Azure Form Recognizer for OCR and schema extraction, integrated into a structured document store.</li>
+              <li>Implemented RAG pipelines for context-aware answering, using LangChain and Semantic Kernel for multi-step reasoning and memory integration. </li>
+              <li>Developed and deployed a FastAPI-based backend with Azure Functions for orchestration and summarization tasks</li>
+              <li>DIntegrated LLM observability features (latency, response scoring, success/failure rates) using Azure Monitor and App Insights</li>
               <!--<li>Collaborated with data engineers and data scientists to ensure the data generated by the AI
                 application is following the data standards</li>-->
-              <li>Shipped AI Models faster through streamlined MLOPS processes</li>
-              <li>Performed rigourous data validation to increase the model accuracy and maintain the data quality</li>
+              <li>Deployed solution in a secure, scalable Azure environment with role-based access and integration into enterprise authentication</li>
+              <li>Achieved 40%+ improvement in document retrieval accuracy by optimizing chunking, embedding models, and vector search configuration</li>
               <li>Optimised latency and throughput of AI Models for stable AI application</li>
 
               <!--<li>Improved code quality resulted in a 15% reduction in bugs, bolstering system security by minimizing
                 vulnerabilities and ensuring data compliance</li>-->
-              <li>Implemented polyglot data persistence solutions to streamline data accessibility and enhance usability
-                across various platforms such as on-premise and cloud</li>
-              <li>Reduced deployment time by 40% through the implementation of CI/CD pipelines, improving operational
-                efficiency. Hence, minimizing downtime and ensuring reliable AI model deployment</li>
-              <li>Improved data lineage visibility, enabling stakeholders to make informed decisions</li>
-              <li>Designed a Causal Analysis framework to assess the value generated by the Smart City program's
-                impact </li>
-              <li>Engineered and implemented predictive analytics solutions using LSTM autoencoder technology within an
-                Intelligent Traffic Management System (ITMS) to forecast future traffic trends and detect anomalies,
-                enabling robust proactive planning and optimization of traffic flow.</li>
-              <li>Delivered data models aligned with business requirements, resulting in data-driven decision-making
-              </li>
-              <li>Implemented a comprehensive backup strategy and disaster recovery management plan to safeguard the AI
-                project's data integrity and ensure seamless continuity in the event of unforeseen disruptions or system
-                failures</li>
+              <li>Outcome:
+                Enabled users to quickly understand and extract insights from complex business documents, significantly reducing manual review time and improving knowledge accessibility across the organization.</li>
             </ul>
 
             <div class="skills-section px-3 px-lg-4">
               <h2 class="h3 mb-1">Technical Skills</h2>
               <div class="flex-container">
-                <div class="flex-box">Computer Vision</div>
                 <div class="flex-box">Generative AI - LLM (RAG) </div>
                 <div class="flex-box">Natural Language Processing</div>
-                <div class="flex-box">Distributed Training</div>
-                <div class="flex-box">MLOPS</div>
-                <div class="flex-box">AI Optimization</div>
-                <div class="flex-box">AI Sensor Fusion</div>
-                <div class="flex-box">Machine Learning</div>
+                <div class="flex-box">Metadata Aware Retrieval</div>
+                <div class="flex-box">LLMOPS</div>
+                <div class="flex-box">OCR Skills</div>
                 <div class="flex-box">Data Management</div>
-                <div class="flex-box">Shell Scripting</div>
+                <div class="flex-box">AI Optimization</div>
                 <div class="flex-box">Infrastructure & Server Management</div>
                 <div class="flex-box">CI/CD Pipelines</div>
+                <div class="flex-box">Shell Scripting</div>
                 <div class="flex-box">Containerization</div>
                 <div class="flex-box">Container Orchestration</div>
                 <div class="flex-box">Cloud Computing</div>
@@ -337,32 +316,25 @@
               <div class="flex-container">
                 <div class="flex-box">Azure - Cloud Computing</div>
                 <div class="flex-box">Azure AI </div>
-                <div class="flex-box">Azure ML </div>
+                <div class="flex-box">Langchain</div>
+                <div class="flex-box">Token Management </div>
                 <div class="flex-box">Azure Analytics</div>
-                <div class="flex-box">NVIDIA Jetson - Edge Computing</div>
                 <div class="flex-box">NVIDIA Deepstream</div>
                 <div class="flex-box">Nvidia Triton Inference Server</div>
                 <div class="flex-box">Langchain Framework</div>
-                <div class="flex-box">Vector Database - Milvus, Chroma DB</div>
-                <div class="flex-box">Azure IoT</div>
-                <div class="flex-box">Azure Stream Analytics</div>
+                <div class="flex-box">Vector Database - Azure Cognitive, Pincecone DB</div>
                 <div class="flex-box">Linux - Ubuntu</div>
                 <div class="flex-box">Python</div>
                 <div class="flex-box">SQL</div>
-                <div class="flex-box">SQL Databases - PostgreSQL, MySQL</div>
-                <div class="flex-box">NOSQL Database - DynamoDB</div>
+                <div class="flex-box">NOSQL Database - CosmosDB</div>
                 <div class="flex-box">Docker</div>
                 <div class="flex-box">Kubernetes</div>
                 <div class="flex-box">Azure Devops</div>
-                <div class="flex-box">Jenkins</div>
                 <div class="flex-box">Github Actions</div>
-                <div class="flex-box">MLflow</div>
-                <div class="flex-box">Data Streaming - MQTT</div>
+                <div class="flex-box">Promptflow</div>
                 <div class="flex-box">Data Processing - Pyspark</div>
                 <div class="flex-box">Data Quality - Great Expectations</div>
                 <!--<div class="flex-box">Unit, Integration Testing - Pytest</div>-->
-                <div class="flex-box">API Testing - Artillery </div>
-                <div class="flex-box">Visualization - Power BI </div>
               </div>
             </div>
           </div>
@@ -400,37 +372,24 @@
             <h4>AI/Data Engineer</h4>
             <h5>Jun'21 - Jan'22</h5>
             <p><em>BP(British Petroleum), UK</em></p>
-            <h4><b>Productivity Project</b></h4>
+            <h4><b>Cloud-Native Lakehouse & ML-Driven Analytics Platform</b></h4>
             <ul>
-              <li> Automated the report generation pipeline to monitor the associates productivity on the AWS platform,
-                integrating data from various organizational resources.</li>
-              <li> Implemented a pipeline that delivers productivity reports directly to Area Managers twice daily via
-                email, resulting in a 50% reduction in report generation time and ensuring timely monitoring of
-                associate productivity.</li>
-
+              <li> Architected and built a modern Lakehouse solution on Azure using Databricks with Delta Lake for bronze/silver/gold data layering, supporting real-time and batch analytics pipelines.</li>
+              <li> Automated ELT/ETL pipelines using Azure Data Factory, Azure Stream Analytics, and EventHub, enabling ingestion and processing of large-scale streaming security logs.</li>
+              <li> Developed ML-enabled pipelines in Databricks notebooks for pattern detection, data profiling, and tag-matching—validated with 90%+ accuracy against benchmark datasets.</li>
+              <li> Integrated Spark-based data quality and profiling workflows using PySpark, improving downstream ML readiness and reducing data noise.</li>
+              <li> Collaborated with the AWS data team to support Data Mesh architecture using Lambda, S3, SQS, and DynamoDB for hybrid cloud processing and governance.</li>
+              <li> Enabled downstream integration with Azure Sentinel for faster threat detection and alerting by transforming and standardizing high-volume log data.</li> 
+              <li>Outcome: Delivered BP’s first successful cloud-native data lake for SDS, reducing processing latency by 35% and enabling faster, more accurate cybersecurity response workflows across the organization.</li>
             </ul>
 
-            <h4><b>Safety Project</b></h4>
-            <ul>
-              <li>Lead the development of an Automated Safety Ticketing System</li>
-
-              <li> Optimised the Data Capture Pipeline that enriched the frontend user experience to empower the
-                downstream applications thus ensuring data quality.</li>
-              <li>Built a multi-region serverless scalable automated Safety Incident application, leading to expedited
-                resolution of safety concerns within Amazon Warehouses from 24 hours to less than 5 hours for
-                low-priority ticket SLAs.</li>
-              <li>Developed an optimised AI BERT Model to perform the automatic classification of safety incident
-                tickets raised by the associates.</li>
-              <li>Deployed a serverless Container AI Model reducing the hosting cost and average deployment times by
-                65%.</li>
-              <li>Performed Inventory Control and Quality Assurance of assortments, ensuring accuracy and compliance.
-              </li>
-            </ul>
+  
 
             <div class="skills-section px-3 px-lg-4">
               <h2 class="h3 mb-1">Technical Skills</h2>
               <div class="flex-container">
                 <div class="flex-box">Cloud Computing</div>
+                <div class="flex-box">Data Lake House</div>
                 <div class="flex-box">Data Mesh</div>
                 <div class="flex-box">Distributed Computing</div>
                 <div class="flex-box">Serverless Application</div>
@@ -442,95 +401,101 @@
             <div class="skills-section px-3 px-lg-4">
               <h2 class="h3 mb-1">Tools and Technologies</h2>
               <div class="flex-container">
-                <div class="flex-box">AWS Cloud Computing</div>
-                <div class="flex-box">API Gateway</div>
+                <div class="flex-box">AWS/Azure Cloud</div>
+                <div class="flex-box">Function App</div>
+                <div class="flex-box">Databricks</div>
                 <div class="flex-box">Lambda</div>
-                <div class="flex-box">Glue</div>
-                <div class="flex-box">Glue Data Catalog</div>
+                <div class="flex-box">Data factory</div>
+                <div class="flex-box">Azure Purview</div>
+                <div class="flex-box">Databricks Data Catalog</div>
+                <div class="flex-box">Data Lake</div>
                 <div class="flex-box">DynamoDB</div>
-                <div class="flex-box">ElasticSearch</div>
-                <div class="flex-box">Athena</div>
-                <div class="flex-box">Quicksight</div>
-                <div class="flex-box">AWS ECR</div>
+                <div class="flex-box">EventHub</div>
+                <div class="flex-box">API Gateway</div>
+                <div class="flex-box">Logic app</div>
+                <div class="flex-box">AWS SQS</div>
                 <div class="flex-box">Hugging Face</div>
-                <div class="flex-box">Data Streaming - AWS Kinesis</div>
-                <div class="flex-box">Data Processing - AWS Glue (Pyspark) </div>
+                <div class="flex-box">Data Streaming - Azure Streaming Analytics</div>
+                <div class="flex-box">Data Processing - Databricks (Pyspark) </div>
                 <div class="flex-box">Data Quality - PyDeequ</div>
                 <div class="flex-box">Unit, Integration Testing - Pytest</div>
-                <div class="flex-box">API Testing - Artillery </div>
-                <div class="flex-box">AWS Lake Formation</div>
+                <div class="flex-box">API Testing - Postman </div>
+                <div class="flex-box">Delta Lake</div>
               </div>
             </div>
 
           </div>
 
           <div class="resume-item">
-            <h4>Analytics Consultant</h4>
-            <h5>Oct'16 - Dec'20</h5>
-            <p><em>Lakshmi Retails, India</em></p>
-            <h4><b>Sales Optimization</b></h4>
+            <h4>Lead Consultant</h4>
+            <h5>Dec'18 - May'20</h5>
+            <p><em>Genpact, India</em></p>
+            <h4><b>Risk Management Platform Modernization</b></h4>
             <ul>
-              <li>Utilize limited historical data to conduct statistical analysis, thereby optimizing sales strategies
-                and improving overall performance</li>
-              <li>Implemented the Pareto Principle to prioritize efforts and resources towards achieving sustained
-                quality sales, ensuring maximum
-                return on investment</li>
-            </ul>
-            <h4><b>ITIL (ITSM) Integration</b></h4>
-            <ul>
-              <li>Incorporated the ITIL (IT Service Management) framework into sales processes, delivering value-added
-                services alongside products to
-                enhance customer satisfaction and retention</li>
-            </ul>
-            <h4><b>Value-Added Services</b></h4>
-            <ul>
-              <li>Successfully achieved a 30-40% increase in profit margins by effectively selling value-added services
-                to customers, thereby driving
-                revenue growth and enhancing business profitability</li>
-            </ul>
-            <h4><b>Data Visualization and Analysis</b></h4>
-            <ul>
-              <li>Leveraged TABLEAU to visualize and analyze sales data, identifying patterns and
-                trends to inform strategic
-                decision-making and increase sales effectiveness</li>
-            </ul>
-            <h4><b>Profit Optimization in FMCG/CPG</b></h4>
-            <ul>
-              <li>Delivered an average profit margin of 30% in 2018 through strategic sales initiatives focused on
-                Fast-Moving Consumer Goods
-                (FMCG), Consumer Packaged Goods (CPG), and Stationery Items, demonstrating a strong understanding of
-                market dynamics and
-                customer preferences</li>
-            </ul>
-            <h4><b>Project Outsourcing - POS Integration</b></h4>
-            <ul>
-              <li>Directed the seamless connection of Point of Sale (POS) machines to MySQL database for transactional
-                processing</li>
-              <li>Implemented and managed the integration process, ensuring real-time and accurate transmission of POS
-                data to the MySQL database</li>
-              <li>Oversaw transactional processing, guaranteeing the integrity and reliability of data for efficient
-                analysis and decision-making</li>
-              <li>Enabled streamlined operations by facilitating direct communication between POS machines and the MySQL
-                database, optimizing
-                transactional efficiency</li>
+              <li>Refactored and migrated monolithic risk management modules into modular Spring Boot microservices, reducing legacy dependencies and improving scalability</li>
+              <li>Implemented Spring Batch workflows to manage large-scale data processing and schema migration, enabling seamless upgrades without data loss.</li>
+              <li>Developed secure and efficient RESTful APIs to support inter-service communication and external system integration, resulting in a 30% performance improvement.</li>
+              <li>Played a key role in code reviews, technical design discussions, and onboarding junior developers as part of the agile delivery team.</li>
+              <li>Supported continuous deployment and testing through integration with CI/CD pipelines, ensuring consistent delivery in a regulated enterprise environment.</li>
             </ul>
             <div class="skills-section px-3 px-lg-4">
               <h2 class="h3 mb-1">Technical Skills</h2>
               <div class="flex-container">
-                <div class="flex-box">Marketing Analytics</div>
+                <div class="flex-box">Risk Management</div>
+                <div class="flex-box">Refactoring</div>
                 <div class="flex-box">Data Analytics</div>
                 <div class="flex-box">Sales Analytics</div>
                 <div class="flex-box">Business Development</div>
-                <div class="flex-box">Machine Learning</div>
               </div>
             </div>
 
             <div class="skills-section px-3 px-lg-4">
               <h2 class="h3 mb-1">Tools and Technologies</h2>
               <div class="flex-container">
-                <div class="flex-box">Python</div>
+                <div class="flex-box">Java</div>
+                <div class="flex-box">Spring Batch</div>
+                <div class="flex-box">Spring Boot</div>
+                <div class="flex-box">Hibernate</div>
+                <div class="flex-box">PlSQl</div>
                 <div class="flex-box">SQL DB - MySQL</div>
-                <div class="flex-box">Tableau</div>
+                <div class="flex-box">JBoss</div>
+                <div class="flex-box">AWS Cloud</div>
+              </div>
+            </div>
+          </div>
+          <div class="resume-item">
+            <h4>Senior Software Engineer</h4>
+            <h5>Dec'18 - May'20</h5>
+            <p><em>RCS Tech, India</em></p>
+            <h4><b>Enterprise Asset Management & Claims Processing Systems</b></h4>
+            <ul>
+              <li>Designed and implemented core modules for an enterprise asset management system, deployed across GE and EDS, improving asset tracking and maintenance operations.</li>
+              <li>Enhanced LDAP authentication and Single Sign-On (SSO) integration for enterprise applications, streamlining access management and user security.</li>
+              <li>Developed and maintained Java-based web services to automate processes such as healthcare claims processing and employee tracking for Vidal Healthcare and HGS.</li>
+              <li>Optimized backend performance by refactoring legacy code and improving database access layers using JDBC and Oracle stored procedures.</li>
+              <li>Worked closely with client-side teams during on-site deployments and provided ongoing support to ensure smooth adoption and performance tuning.</li>
+              <li>Outcome: Successfully improved platform responsiveness and maintainability while reducing technical debt. Delivered a resilient architecture that enabled </li>
+              <li>Outcome: Delivered stable and maintainable software solutions that improved operational efficiency and security. Played a key role in long-term client engagements 
+              through strong technical delivery and consistent support.</li>
+            </ul>
+            <div class="skills-section px-3 px-lg-4">
+              <h2 class="h3 mb-1">Technical Skills</h2>
+              <div class="flex-container">
+                <div class="flex-box">Asset Management</div>
+                <div class="flex-box">Reporting Analytics</div>
+                <div class="flex-box">Sales Analytics</div>
+              </div>
+            </div>
+
+            <div class="skills-section px-3 px-lg-4">
+              <h2 class="h3 mb-1">Tools and Technologies</h2>
+              <div class="flex-container">
+                <div class="flex-box">Java</div>
+                <div class="flex-box">Spring</div>
+                <div class="flex-box">JSP/Servlets</div>
+                <div class="flex-box">Oracle DB</div>
+                <div class="flex-box">Spring</div>
+                <div class="flex-box">REST APIs</div>
               </div>
             </div>
           </div>
@@ -543,7 +508,7 @@
     </section><!-- End Resume Section -->
 
     <!-- ======= Research Project Section ======= -->
-    <section id="research" class="resume">
+    <!-- <section id="research" class="resume">
       <div class="container">
 
         <div class="section-title">
@@ -552,7 +517,7 @@
 
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
           <!-- <h3 class="resume-title">Professional Experience</h3> -->
-          <div class="resume-item">
+           <!--<div class="resume-item">
             <h4>Deep Learning</h4>
             <h5>Sep'20 - May'21</h5>
             <p><em>Coventry University</em></p>
@@ -573,7 +538,7 @@
       </div>
 
       </div>
-    </section><!-- End Research Project Section -->
+    </section>--><!-- End Research Project Section -->
 
 
     <!-- ======= Professional Courses ======= -->
