@@ -203,24 +203,25 @@
             <h4>AI Architect/Engineer</h4>
             <h5>Apr'25 - Present</h5>
             <p><em>Clients (UK & US)</em></p>
-            <h4><b>PO Agent API — Agentic Procurement Assistant (LangGraph + FastAPI + HITL)</b></h4>
+            <h4><b>PO Agent API — Agentic Procurement Assistant (LangGraph + FastAPI + HITL + RAG + Tools + LangSmith)</b></h4>
             <ul>
               <li>A production-ready backend for an AI procurement assistant that can check inventory, look up policy rules, search the web for pricing, 
                 create purchase orders with human-in-the-loop approval, and summarize daily PO activity..</li>
-              <li>Integrated a Policy guidelines Extraction Plugin that uses a RAG-powered Azure Function to parse organization policy rules.</li>
+              <li>Integrated a Policy guidelines tool for Extraction, Embedding and Indexing that uses a RAG-powered, Azure FunctionApp to parse organization policy rules.</li>
               <li>Developed a QueryRefinerPlugin using LLMs to clean, rephrase, and restructure user queries, improving downstream plugin accuracy and LLM understanding.</li>
+              <li>Developed a Purchase Order approval tool with stock availability, poliy rules and validate using HITL approval for new/exsisting product and resume the Langgraph nodes for further steps.</li>
               <li>Integrated external web search capabilities via the Tavily API to fetch real-time material price related to users Product request.
               </li>
               <!--<li>Integrated object tracking algorithm to maintain consistent object identities across consecutive frames in real-time</li>-->
-              <li>Instrumented OpenTelemetry-based observability to trace token usage, model latency, and Azure OpenAI cost metrics across tools calls and agent executions.</li>
-              <li>Orchestrated agent work flow that chains refine → search → approve(HITL) → search operations, returning structured responses like:</li>
-              <li>Developed a FastAPI endpoint (/api/agnt/chat) to serve frontend interfaces like React Js, enabling real-time interaction with the assistant.</li>
+              <li>Instrumented LangSmith observability to trace token usage, model latency, and Azure OpenAI cost metrics across tools calls and agent executions.</li>
+              <li>Orchestrated agent work flow that chains refine → search → approve(HITL) → search operations, returning structured responses.</li>
+              <li>Developed a FastAPI endpoint (/api/agntchat) to serve frontend interfaces like React Js, enabling real-time interaction with the assistant.</li>
             </ul>
 
             <div class="skills-section px-3 px-lg-4">
-              <h2 class="h3 mb-1">Technical Skills</h2>
+              <h2 class="h3 mb-1">Technical Stack</h2>
               <div class="flex-container">
-                <div class="flex-box">OCR based Extraction</div>
+                <div class="flex-box">OCR Extraction</div>
                 <div class="flex-box">Data Ingestion</div>
                 <div class="flex-box">Retrieval Augmented Generation</div>
                 <div class="flex-box">Data Augmented</div>
@@ -253,13 +254,13 @@
             <h4>AI Consultant</h4>
             <h5>Jan'22 - Mar'25</h5>
             <p><em>Clients (Europe & US)</em></p>
-            <h4><b>AI Skill Assistant LLM Agent with Semantic Kernel, RAG, Plugin Architecture and MCP Protocol</b></h4>
+            <h4><b>AI Skill Assistant - Multi step Agent (Semantic Kernel + FastAPI + RAG + Plugins and MCP Protocol + Observability)</b></h4>
             <ul>
               <li>Designed and implemented a multi-step agent using Microsoft Semantic Kernel that orchestrates multiple AI plugins to extract, refine, and enrich user queries
                 with the help of MCP Protocol using Azure OpenAI.</li>
               <li>Integrated a CV Skill Extraction Plugin that uses a RAG-powered Azure Function to parse user resumes and extract technical and domain-specific skills</li>
               <li>Developed a QueryRefinerPlugin using LLMs to clean, rephrase, and restructure user queries, improving downstream plugin accuracy and LLM understanding.</li>
-              <li>Integrated external web search capabilities via the Tavily API to fetch real-time learning resources related to user skill gaps.
+              <li>Integrated external web search capabilities via the Tavily API to fetch real-time learning resources, improvements related to user skill gaps.
               </li>
               <!--<li>Integrated object tracking algorithm to maintain consistent object identities across consecutive frames in real-time</li>-->
               <li>Implemented Redis caching mechanism at the agent level to avoid repeated calls for the same questions, reducing token usage and API latency.</li>
@@ -269,7 +270,7 @@
             </ul>
 
             <div class="skills-section px-3 px-lg-4">
-              <h2 class="h3 mb-1">Technical Skills</h2>
+              <h2 class="h3 mb-1">Technical Stack</h2>
               <div class="flex-container">
                 <div class="flex-box">Text Extraction</div>
                 <div class="flex-box">Data Ingestion</div>
