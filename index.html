@@ -203,17 +203,17 @@
             <h4>AI Architect/Engineer</h4>
             <h5>Apr'25 - Present</h5>
             <p><em>Clients (UK & US)</em></p>
-            <h4><b>PO Agent API — Agentic Procurement Assistant (LangGraph + FastAPI + HITL + RAG + Tools + LangSmith)</b></h4>
+            <h4><b>PO Agent API — Agentic Procurement Assistant (LangGraph + FastAPI + HITL + RAG + Tools + AWS Bedrock + Azure OpenAI + LangSmith)</b></h4>
             <ul>
               <li>A production-ready backend for an AI procurement assistant that can check inventory, look up policy rules, search the web for pricing, 
                 create purchase orders with human-in-the-loop approval, and summarize daily PO activity.</li>
               <li>Integrated a Policy guidelines tool for Extraction, Embedding and Indexing that uses a RAG-powered, Azure FunctionApp to parse organization policy rules.</li>
-              <li>Developed a QueryRefinerPlugin using Azure OpenAI model to clean, rephrase, and restructure user queries, improving downstream plugin accuracy and LLM understanding.</li>
+              <li>Developed a QueryRefinerPlugin using AWS Bedrock model to clean, rephrase, and restructure user queries, improving downstream plugin accuracy and LLM understanding.</li>
               <li>Developed a Purchase Order approval tool with stock availability, poliy rules and validate using HITL approval for new/exsisting product and resume the Langgraph nodes for further steps.</li>
               <li>Integrated external web search capabilities via the Tavily API to fetch real-time material price related to users Product request.
               </li>
               <!--<li>Integrated object tracking algorithm to maintain consistent object identities across consecutive frames in real-time</li>-->
-              <li>Instrumented LangSmith observability to trace token usage, model latency, and AWS Bedrock cost metrics across tools calls and agent executions.</li>
+              <li>Instrumented LangSmith observability to trace token usage, model latency, and Azure OpenAI models cost metrics across tools calls and agent executions.</li>
               <li>Orchestrated agent work flow that chains refine → search → approve(HITL) → search operations, returning structured responses.</li>
               <li>Developed a FastAPI endpoint (/api/agntchat) to serve frontend interfaces like React Js, enabling real-time interaction with the assistant.</li>
             </ul>
